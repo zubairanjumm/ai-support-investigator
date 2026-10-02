@@ -1,0 +1,42 @@
+[
+  {
+    "ticket_id": "T001",
+    "title": "API requests suddenly returning 503",
+    "description": "Our application was working normally this morning, but API requests are now returning 503 Service Unavailable errors.",
+    "customer": "Acme Corp",
+    "product": "Payments API",
+    "priority": "high"
+  },
+  {
+    "ticket_id": "T002",
+    "title": "Dashboard loads very slowly",
+    "description": "The analytics dashboard takes more than 30 seconds to load. Other parts of the application appear normal.",
+    "customer": "Northstar Labs",
+    "product": "Analytics",
+    "priority": "medium"
+  },
+  {
+    "ticket_id": "T003",
+    "title": "Users cannot reset passwords",
+    "description": "Customers are requesting password reset emails, but the emails are not arriving.",
+    "customer": "Bright Systems",
+    "product": "Authentication",
+    "priority": "high"
+  },
+  {
+    "ticket_id": "T004",
+    "title": "Webhook events are delayed",
+    "description": "Webhook events are reaching our system several minutes after the original event occurred.",
+    "customer": "Orbit Commerce",
+    "product": "Webhooks",
+    "priority": "medium"
+  },
+  {
+    "ticket_id": "T005",
+    "title": "Database connection errors",
+    "description": "The application intermittently reports that it cannot establish a connection to the database.",
+    "customer": "Vertex Software",
+    "product": "Core Platform",
+    "priority": "high"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "case_id": "C001",
+    "title": "Payment API returning 503 errors",
+    "description": "Multiple customers reported 503 responses from the Payments API.",
+    "root_cause": "The payment service exceeded its connection pool capacity during a traffic spike.",
+    "resolution": "Increased connection pool capacity and restarted affected service instances.",
+    "category": "service_unavailable",
+    "tags": ["503", "api", "connection_pool", "traffic_spike"]
+  },
+  {
+    "case_id": "C002",
+    "title": "Analytics dashboard slow",
+    "description": "Dashboard queries became increasingly slow after a large increase in stored events.",
+    "root_cause": "A frequently used analytics query was missing an appropriate database index.",
+    "resolution": "Added the required database index and optimized the query.",
+    "category": "performance",
+    "tags": ["slow", "dashboard", "database", "index"]
+  },
+  {
+    "case_id": "C003",
+    "title": "Password reset emails missing",
+    "description": "Password reset requests succeeded but customers did not receive emails.",
+    "root_cause": "The outbound email provider rejected messages because the sending domain configuration was invalid.",
+    "resolution": "Corrected the domain authentication configuration and verified email delivery.",
+    "category": "authentication",
+    "tags": ["password", "email", "reset", "smtp"]
+  },
+  {
+    "case_id": "C004",
+    "title": "Delayed webhook delivery",
+    "description": "Webhook events accumulated in the delivery queue and were processed several minutes late.",
+    "root_cause": "The webhook worker queue became saturated during a large event burst.",
+    "resolution": "Scaled the webhook workers and processed the queued events.",
+    "category": "webhook",
+    "tags": ["webhook", "queue", "delay", "worker"]
+  },
+  {
+    "case_id": "C005",
+    "title": "Intermittent database connection failures",
+    "description": "Application instances periodically failed to connect to the database.",
+    "root_cause": "The database reached its maximum connection limit.",
+    "resolution": "Increased the database connection limit and reduced unnecessary persistent connections.",
+    "category": "database",
+    "tags": ["database", "connection", "limit", "timeout"]
+  }
+]
