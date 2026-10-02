@@ -27,7 +27,13 @@ class SupportDocument(BaseModel):
     category: str
     tags: list[str] = Field(default_factory=list)
 
-
+class RetrievedEvidence(BaseModel):
+    source_id: str
+    source_type: str
+    title: str
+    content: str
+    score: float
+    
 class InvestigationResult(BaseModel):
     ticket_id: str
     category: str

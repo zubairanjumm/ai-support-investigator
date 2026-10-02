@@ -1,9 +1,17 @@
 [project]
 name = "ai-support-investigator"
 version = "0.1.0"
-description = "Add your description here"
+description = "AI Support Investigator"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "huggingface-hub>=2.1.1",
+    "fastapi[standard]>=0.141.1",
+    "numpy>=2.0.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "sentence-transformers>=5.0.0",
+    "streamlit>=1.64.0",
+    "torch",
+    "torchvision",
+    "uvicorn>=0.52.0",
 ]
